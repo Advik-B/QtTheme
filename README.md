@@ -47,3 +47,6 @@ class YourExistingGui(QMainWindow):
 
 ```
 
+## Attribution
+
+Some themes are from [qss-stock.devsecstudio.com](https://qss-stock.devsecstudio.com)
