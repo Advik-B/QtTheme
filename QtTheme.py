@@ -1,5 +1,5 @@
-from qtpy.QtWidgets import QMainWindow, QWidget
-import typing
+from qtpy.QtWidgets import QMainWindow, QWidget, QApplication
+import typing, random
 
 class ThemeNotFoundError(Exception): pass
 class CanNotApplyThemeError(Exception): pass
@@ -47,3 +47,25 @@ def apply_theme(gui: typing.Union[QMainWindow, QWidget], theme: str, mode: str="
 
     except Exception as e:
         raise e from e
+
+def list_themes():
+    """Summary
+
+    Returns:
+        list: list of themes
+    """
+    themes = []
+    for file in os.listdir("themes"):
+        if file.endswith(".css"):
+            themes.append(file.replace(".css", ""))
+    return themes
+
+def apply_random_theme(gui: typing.Union[QMainWindow, QWidget]):
+    """Summary
+
+    Args:
+        gui (QMainWindow | QWidget): Must be a valid widget that supports`setStyleSheet` method
+    """
+    themes = list_themes()
+    theme = random.choice(themes)
+    apply_theme(gui, theme)
