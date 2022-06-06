@@ -3,6 +3,9 @@
 
 [**Just use QtTheme**](https://github.com/Advik-B/QtTheme#usage)
 
+## Installation
+see [releases](https://github.com/Advik-B/QtTheme/releases)
+
 ## Usage
 
 ```py
