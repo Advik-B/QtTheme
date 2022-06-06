@@ -47,6 +47,9 @@ class YourExistingGui(QMainWindow):
 
 ```
 
+## License
+[MIT](https://github.com/Advik-B/QtTheme/blob/Master/LICENSE.txt)
+
 ## Attribution
 
 Some themes are from [qss-stock.devsecstudio.com](https://qss-stock.devsecstudio.com)
