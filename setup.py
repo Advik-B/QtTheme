@@ -22,4 +22,5 @@ setuptools.setup(
     ],
     package_dir={"": ".", "themes": "themes"},
     python_requires=">=3.9",
+    requires=["QtPy"],
 )
