@@ -1,7 +1,10 @@
 # QtTheme
 > Are you tired of making custom qt stysheets, do you want add a theme system for app
 
-**Just use QtTheme**
+[**Just use QtTheme**]
+
+## Usage
+
 ```py
 
 from QtTheme import apply_theme
