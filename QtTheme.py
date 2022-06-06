@@ -13,7 +13,7 @@ except ModuleNotFoundError as e:
     finally:
         try:
             assert QMainWindow and QWidget
-        except AssertionError as e:
+        except (AssertionError, NameError) as e:
             raise ModuleNotFoundError(
                 "QtTheme: Could not find any Qt library. Please install PyQt5, PySide2 or QtPy"
             ) from e
