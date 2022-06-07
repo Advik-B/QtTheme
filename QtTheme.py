@@ -63,7 +63,7 @@ def apply_theme(
     """
     try:
         OLD_STYLE = gui.styleSheet()
-        with open(f"{cwd}/themes/{theme}.css", "r") as theme:
+        with open(f"{cwd}/themes/{theme}.qss", "r") as theme:
             THEME = theme.read()
             if mode.casefold() == "append":
                 gui.setStyleSheet(str(gui.styleSheet()) + THEME)
@@ -98,8 +98,8 @@ def list_themes():
     """
     themes = []
     for file in os.listdir(f"{cwd}/themes"):
-        if file.endswith(".css"):
-            themes.append(file.replace(".css", ""))
+        if file.endswith(".qss"):
+            themes.append(file.replace(".qss", ""))
     return themes
 
 
